@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive 3D Parallax Website</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header hide">
+    <nav>
+      <img src="img/logo.png" class="logo" data-speedx="0.3" data-speedz="0" data-speedy="0.1" alt="">
+      <ul>
+        <li>
+          <a href="#">Login</a>
+        </li>
+        <li>
+          <a href="#">Sign Up</a>
+        </li>
+        <li class="search">
+          <a href="#">
+            <i class="ri-search-eye-line"></i>
+          </a>
+        </li>
+        <li class="hamburger">
+          <a href="#">
+            <div class="bar"></div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="main">
+    <div class="vignette hide"></div>
+    <img data-distance="-200" src="./img/background.png" data-speedx="0.3" data-speedz="0" data-speedy="0.38" alt="" class="parallax  bg-img">
+    <img data-distance="850" src="./img/fog_7.png" data-speedx="0.27" data-speedz="0" data-speedy="0.32" alt="" class="parallax fog-7">
+    <img data-distance="1100" src="./img/mountain_10.png" data-speedx="0.195" data-speedz="0" data-speedy="0.305" alt="" class="parallax mountain-10">
+    <img data-distance="1400" src="./img/fog_6.png" data-speedx="0.25" data-speedz="0" data-speedy="0.28" alt="" class="parallax fog-6">
+    <img data-distance="1600" src="./img/mountain_9.png" data-speedx="0.125" data-speedz="0.15" data-speedy="0.155" alt="" class="parallax mountain-9">
+    <img data-distance="1900" src="./img/mountain_8.png" data-speedx="0.1" data-speedz="0" data-speedy="0.11" alt="" class="parallax mountain-8">
+    <img data-distance="2350" src="./img/fog_5.png" data-speedx="0.16" data-speedz="0" data-speedy="0.105" alt="" class="parallax fog-5">
+    <img data-distance="2670" src="./img/mountain_7.png" data-speedx="0.1" data-speedz="0" data-speedy="0.1" alt="" class="parallax mountain-7">
+    <div class="text parallax" data-speedx="0.07" data-speedz="0" data-speedy="0.07">
+      <h2>China</h2>
+      <h1>Zhangjiajie</h1>
+    </div>
+    <img data-distance="3050" src="./img/mountain_6.png" data-speedx="0.065" data-speedz="0.065" data-speedy="0.05" alt="" class="parallax mountain-6">
+    <img data-distance="3190" src="./img/fog_4.png" data-speedx="0.135" data-speedz="0" data-speedy="0.32" alt="" class="parallax fog-4">
+    <img data-distance="3300" src="./img/mountain_5.png" data-speedx="0.08" data-speedz="0.13" data-speedy="0.21" alt="" class="parallax mountain-5">
+    <img data-distance="3480" src="./img/fog_3.png" data-speedx="0.11" data-speedz="0" data-speedy="0.018" alt="" class="parallax fog-3">
+    <img data-distance="3630" src="./img/mountain_4.png" data-speedx="0.058" data-speedz="0" data-speedy="0.0115" alt="" class="parallax mountain-4">
+    <img data-distance="3800" src="./img/mountain_3.png" data-speedx="0.04" data-speedz="0.32" data-speedy="0.013" alt="" class="parallax mountain-3">
+    <img data-distance="4000" src="./img/fog_2.png" data-speedx="0.15" data-speedz="0" data-speedy="0.11" alt="" class="parallax fog-2">
+    <img data-distance="4050" src="./img/mountain_2.png" data-speedx="0.0235" data-speedz="0" data-speedy="0.013" alt="" class="parallax mountain-2">
+    <img data-distance="4240" src="./img/mountain_1.png" data-speedx="0.027" data-speedz="0.53" data-speedy="0.018" alt="" class="parallax mountain-1">
+    <img data-distance="4400" src="./img/sun_rays.png "  alt="" class="sun-rays hide">
+    <img data-distance="4620" src="./img/black_shadow.png"  alt="" class="black-shadow hide">
+    <img data-distance="400" src="./img/fog_1.png" data-speedx="0.12" data-speedz="0" data-speedy="0.01" alt="" class="parallax">
+    <!-- <img src="./img/" data-speedx="0.3" data-speedz="0" data-speedy="0.1" alt="" class="parallax"> -->
+
+  </main>
+  <div id="main2" class="main 2">
+    
+  </div>
+  <script src="js/gsap.min.js"></script>
+  <script src="js/indexl.js" defer></script>
+</body>
+
+</html>
