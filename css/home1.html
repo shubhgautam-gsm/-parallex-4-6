@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>CSS Hover & Animation Templates</title>
+
+<style>
+/* ===== COMMON PAGE STYLE ===== */
+body{
+  margin: 0;
+  padding: 0;
+  background: #0f172a;
+  font-family: Arial, sans-serif;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* =================================================
+   TEMPLATE 1: NEON HOVER BUTTON
+   ================================================= */
+.neon-btn{
+  padding: 15px 40px;          /* property 1 */
+  font-size: 18px;             /* property 2 */
+  color: #00ffff;              /* property 3 */
+  background-color: #020617;   /* property 4 */
+  border: 2px solid #00ffff;   /* property 5 */
+  border-radius: 40px;         /* property 6 */
+  cursor: pointer;             /* property 7 */
+  transition: all 0.4s ease;   /* property 8 */
+  box-shadow: 0 0 10px cyan;   /* property 9 */
+}
+
+.neon-btn:hover{
+  background-color: #00ffff;
+  color: #020617;
+  transform: scale(1.15);      /* property 10 */
+  box-shadow: 0 0 25px cyan, 0 0 90px cyan, 3px 2px 16px 26px orange, 3px 2px 16px 36px green;
+}
+/* =================================================
+   TEMPLATE 2: 3D ANIMATED CARD
+   ================================================= */
+.card{
+  width: 250px;
+  height: 320px;
+  background: linear-gradient(145deg,#1e293b,#020617);
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  transition: transform 0.5s;
+  animation: float 3s infinite ease-in-out; /* keyframes */
+}
+
+.card:hover{
+  transform: rotateY(15deg) translateY(-10px);
+}
+
+.card h2{
+  margin-top: 40px;
+}
+
+.card p{
+  opacity: 0.8;               /* property 11 */
+}
+
+/* KEYFRAMES ANIMATION */
+@keyframes float{
+  0%{ transform: translateY(0); }
+  50%{ transform: translateY(-15px); }
+  100%{ transform: translateY(0); }
+}
+
+/* =================================================
+   TEMPLATE 3: LOADING CIRCLE
+   ================================================= */
+.loader{
+  width: 80px;
+  height: 80px;
+  border: 6px solid #ffec6eff ;
+  border-top: 6px solid cyan;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+  box-shadow: 0 0 20px 6px cyan;
+  border-color: #ffec6eff red #8aee43ff black;
+}
+
+/* KEYFRAMES */
+@keyframes spin{
+  from{ transform: rotate(0deg); }
+  to{ transform: rotate(360deg); }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- TEMPLATE 1 -->
+<button class="neon-btn">Hover Me</button>
+
+<!-- TEMPLATE 2 -->
+<div class="card">
+  <h2>CSS Card</h2>
+  <p>Hover & Floating Animation</p>
+</div>
+
+<!-- TEMPLATE 3 -->
+<div class="loader"></div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .head ,.foot{
+            background-color: rgb(89, 68, 109);
+            color: white;
+            padding: 50px;
+        }
+
+        .col {
+            float: left;
+            padding: 20px;
+
+
+
+        }
+
+        .col ul li {
+            background-color: rgb(16, 77, 77);
+            color: aliceblue;
+            margin-bottom: 20px;
+            padding: 20px;
+
+        }
+
+        .clrfx::after {
+            content: "";
+            clear: both;
+            display: table;
+
+        }
+
+        .menu {
+            width: 25%;
+          
+        }
+
+        .menu2 {
+            width: 75%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <h1>BHARAT</h1>
+    </div>
+
+    <div class="clrfx">
+        <div class="col menu">
+            <ul>
+                <li>GUJ</li>
+                <li>RAJ</li>
+                <li>KAR</li>
+                <li>BIH</li>
+                <li>KOL</li>
+            </ul>
+        </div>
+        <div class="col menu2">
+            <h1> THE CITY</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, incidunt?
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, incidunt?
+            </p>
+        </div>
+    </div>
+
+
+    <div class="foot">
+        <h2>
+            Footer
+        </h2>
+    </div>
+
+
+
+</body>
+
+</html>

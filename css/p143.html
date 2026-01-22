@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img1{
+            float: right;
+            height: 200px;
+            width: 300px;
+        }
+        .img2{
+            float: right;
+            height: 200px;
+            width: 300px;
+        }
+        .s1{
+            clear: right;
+        }
+        div{
+            border: 2px solid green;
+        }
+        .clearfix{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h2>Without Clearfix</h2>
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+    <div>
+        <img class="img1" src="../css/imgs/items.jpg" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius illum, necessitatibus minus blanditiis esse dolorem soluta asperiores, suscipit consequatur nihil eligendi ex. Excepturi, animi! Facere sapiente perferendis provident voluptates perspiciatis?
+    </div>
+    <h2 class="s1">With Clearfix</h2>
+    <div class="clearfix">
+        <img class="img2" src="../css/imgs/cup.jpg" alt="">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius illum, necessitatibus minus blanditiis esse dolorem soluta asperiores, suscipit consequatur nihil eligendi ex. Excepturi, animi! Facere sapiente perferendis provident voluptates perspiciatis?
+    </div>
+</body>
+</html>

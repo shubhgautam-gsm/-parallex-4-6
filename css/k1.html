@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .head , .foot{
+            background-color: rgb(89, 68, 109);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .head h1{
+            /*inline vs block only one    solution hybrid(inline-block) */
+            display: inline-block;
+            margin-left: -250px;
+            height: 60px;
+            width: 300px;
+            margin-right: 250px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .head span{
+            margin-left: 60px;
+        }
+        .head a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        a:hover{
+            color:greenyellow
+        }
+        .card1{
+            background-color: red;
+            display: inline-block;
+            
+        }
+        .card2{
+            display: inline-block;
+            background-color: blue;
+            
+        }
+        .card3{
+            display: inline-block;
+            background-color: green;
+            
+        }
+        .card4{
+            display: inline-block;
+            background-color: yellow;
+            
+        }
+
+        .card1, .card2, .card3,.card4{
+            height: 150px;
+            width: 250px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head" >
+        <h1>FLIPCART</h1>
+        
+        <a href="./bags.html"><span>bags</span></a>
+        <a href="./laptops.html"><span>laptops</span></a>
+        <a href="./pendrives.html"><span>pendrives</span></a>
+        <a href="./mobiles.html"><span>mobiles</span></a>
+    </div>
+    <div class="main">
+        <div class="card1">card1</div>
+        <div class="card2">card2</div>
+        <div class="card3">card3</div>    
+        <div class="card4">card3</div>    
+    </div>
+    <div class="foot">contact us:70699935209 mail:shubh123@gmail.com</div>
+</body>
+</html>
+ 

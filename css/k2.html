@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .head , .foot{
+            background-color: rgb(89, 68, 109);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            width: 100%;
+        }   
+        .foot{
+            position:absolute;
+            bottom:0;
+        }
+        .head h1{
+            /*inline vs block only one    solution hybrid(inline-block) */
+            display: inline-block;
+            margin-left: -250px;
+            height: 60px;
+            width: 300px;
+            margin-right: 250px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .head span{
+            margin-left: 60px;
+        }
+        .head a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        a:hover{
+            color:greenyellow
+        }
+        .card1{
+            background-image: url(../css/imgs/mobile.jpg);
+            display: inline-block;
+            transition: transform 2s;
+        }
+
+        @keyframes chg{
+            0%{box-shadow:2px 2px 9px 5px red,2px 2px 16px 9px rgb(255, 153, 0);
+            opacity: 1;}
+            25%{box-shadow: 2px 2px 9px 5px blue,2px 2px 16px 9px rgb(255, 0, 123);
+                opacity: 0.9;}
+            50%{box-shadow: 2px 2px 9px 5px green,2px 2px 16px 9px rgb(0, 255, 140);
+            opacity: 0.8;}
+            75%{box-shadow: 2px 2px 9px 5px yellow,2px 2px 16px 9px rgb(0, 18, 220);
+            opacity: 0.2;}
+            100%{box-shadow: 2px 2px 9px 5px red,2px 2px 16px 9px rgb(217, 255, 0);
+            opacity: 0;}
+            
+        }
+
+
+        .card1:hover{
+            transform: rotateX(120deg) rotateY(180deg) rotateZ(120deg);       
+        }
+        
+        .card2{
+            display: inline-block;
+            background-image: url(../css/imgs/items.jpg);
+        }
+        .card2:hover{
+            animation: chg 2s infinite;
+        }
+        .card3{
+            display: inline-block;
+            background-image: url(../css/imgs/cup.jpg);
+            
+        }
+        .card4{
+            display: inline-block;
+            background-image: url(../css/imgs/mac.jpg);
+            
+        }
+
+        .card1, .card2, .card3,.card4{
+            height: 150px;
+            width: 250px;
+            border-radius: 10%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;        
+            margin:50px 20px 50px 20px;
+            color:white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgb(0, 0, 0),2px 2px 4px red ;
+            padding-top: 10px;
+            font-family: cursive;
+            font-size: 25px;
+        }
+            
+            @keyframes bg {
+                
+                0%{background:linear-gradient(60deg, red , yellow);
+                }
+                10%{background:linear-gradient(80deg, orange , pink);
+                }
+                20%{background:linear-gradient(100deg, yellow , green);
+                }
+                30%{background:linear-gradient(120deg, green , blue);
+                }
+                40%{background:linear-gradient(140deg, blue , indigo);
+                }
+                50%{background:linear-gradient(160deg, indigo , violet);
+                }
+                60%{background:linear-gradient(180deg, violet , red);
+                }
+                70%{background:linear-gradient(200deg, red , orange);
+                }
+                80%{background:linear-gradient(220deg, orange , yellow);
+                }
+                90%{background:linear-gradient(240deg, yellow , green);
+                }
+                100%{background:linear-gradient(260deg, green , blue);
+                }
+            }
+
+         
+       
+        html{
+            animation: bg 20s infinite ;
+            background-size: 400% 400%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="head" >
+        <h1>FLIPCART</h1>
+        
+        <a href="./bags.html"><span>bags</span></a>
+        <a href="./laptops.html"><span>laptops</span></a>
+        <a href="./pendrives.html"><span>pendrives</span></a>
+        <a href="./mobiles.html"><span>mobiles</span></a>
+    </div>
+    <div class="main">
+        <div class="card1">card1</div>
+        <div class="card2">card2</div>
+        <div class="card3">card3</div>    
+        <div class="card4">card3</div>    
+    </div>
+    <div class="foot">contact us:70699935209 mail:shubh123@gmail.com</div>
+</body>
+</html>
+ 

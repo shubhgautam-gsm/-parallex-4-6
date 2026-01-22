@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  text-align: center;
+}
+p{height: 50px;}
+/* Four values */
+p.four {
+  border-width: 6px;
+                /*top right bottom left */
+  border-style: dotted solid double dashed;
+}
+
+/* Three values */
+p.three {
+                /*top right bottom right*/
+                /* 1    2    3(1)     4(2) */
+  border-style: dotted solid double ;
+
+}
+
+/* Two values */
+p.two {
+  border-style: dotted solid;
+}
+
+/* One value */
+p.one {
+  border-style: dotted;
+}
+</style>
+</head>
+<body>
+
+<h2>Individual Border Sides</h2>
+<p class="four">4 different border styles.</p>
+<p class="three">3 different border styles.</p>
+<p class="two">2 different border styles.</p>
+<p class="one">1 border style.</p>
+
+</body>
+</html>
+
+

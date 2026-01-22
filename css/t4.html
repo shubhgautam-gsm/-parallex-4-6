@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Island+Moments&display=swap"
+        rel="stylesheet">
+    <style>
+        .head {
+            background: linear-gradient(rgb(73, 44, 98), purple);
+            height: 150px;
+            position: relative;
+        }
+
+        @keyframes chg {
+            0% {
+                text-shadow: 0px 0px 2px rgb(199, 199, 67), 0px 0px 6px rgb(158, 187, 107),
+                    2px 2px 6px rgb(151, 65, 65), 0px 0px 6px rgb(60, 226, 255);
+            }
+
+            5% {
+                text-shadow: 0px 0px 2px yellow, 0px 0px 6px rgb(96, 203, 212),
+                    2px 2px 6px rgb(252, 214, 63), 0px 0px 6px rgb(60, 226, 255);
+            }
+
+            10% {
+                text-shadow: 0px 0px 2px rgb(199, 199, 67), 0px 0px 6px rgb(158, 187, 107),
+                    2px 2px 6px rgb(236, 129, 129), 0px 0px 6px rgb(60, 226, 255);
+            }
+
+            15% {
+                text-shadow: 0px 0px 2px rgb(236, 236, 154), 0px 0px 6px rgb(95, 237, 250),
+                    2px 2px 6px rgb(252, 214, 63), 0px 0px 6px rgb(116, 209, 226);
+            }
+
+            20% {
+                text-shadow: 0px 0px 2px rgb(199, 199, 67), 0px 0px 6px rgb(158, 187, 107),
+                    2px 2px 6px rgb(151, 65, 65), 0px 0px 6px rgb(139, 3, 3);
+            }
+
+            25% {
+                text-shadow: 0px 0px 2px yellow, 0px 0px 6px rgb(96, 203, 212),
+                    2px 2px 6px rgb(159, 150, 113), 0px 0px 6px rgb(107, 189, 204);
+            }
+
+            30% {
+                text-shadow: 0px 0px 2px rgb(199, 199, 67), 0px 0px 6px rgb(158, 187, 107),
+                    2px 2px 6px rgb(236, 129, 129), 0px 0px 6px rgb(60, 226, 255);
+            }
+
+            35% {
+                text-shadow: 0px 0px 2px rgb(236, 236, 154), 0px 0px 6px rgb(95, 237, 250),
+                    2px 2px 6px rgb(252, 214, 63), 0px 0px 6px rgb(60, 226, 255);
+            }
+
+            40% {
+                text-shadow: 0px 0px 2px rgb(199, 199, 67), 0px 0px 6px rgb(158, 187, 107),
+                    2px 2px 6px rgb(151, 65, 65), 0px 0px 6px rgb(60, 226, 255);
+            }
+
+            50% {
+                text-shadow: 0px 0px 2px yellow, 0px 0px 6px rgb(96, 203, 212),
+                    2px 2px 6px rgb(252, 214, 63), 0px 0px 6px rgb(107, 189, 204);
+            }
+
+            90% {
+                text-shadow: 0px 0px 2px yellow, 0px 0px 6px rgb(183, 252, 63),
+                    2px 2px 6px rgb(252, 63, 63), 0px 0px 6px rgb(60, 226, 255);
+            }
+
+            100% {
+                text-shadow: 0px 0px 2px rgb(129, 255, 56), 0px 0px 6px rgb(183, 252, 63),
+                    2px 2px 6px rgb(252, 63, 63), 0px 0px 6px rgb(60, 226, 255);
+            }
+        }
+
+        .h-name {
+            font-size: 60px;
+            position: absolute;
+            top: 50%;
+            left: 60px;
+            font-family: "DynaPuff", system-ui;
+            transform: translate(0, -50%);
+            animation: chg 4s infinite ease-in-out;
+        }
+
+        .head img {
+            position: absolute;
+            right: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <span class="h-name">RANGOLI RESTAURANT</span>
+        <img src="../imgs/f1.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* id='#'   class='.'  */
+    /* px pixel chatgpt   (pixel in dots in screen)   */
+    /*          */
+    .example1{
+        background-image: url(../imgs2/ferari.jpg);
+        background-size: 110% 100%;  
+        height:350px;
+        width: 500px;
+
+         
+        
+     }  
+     .example2{
+        background-image: url(../imgs/mobile.jpg);
+        background-size: 500px 350px;  
+        height:350px;
+        width: 500px;
+        background-size: 100% 100%;
+
+         
+        
+     }  
+     .example3{
+        background-image: url(../imgs/cup.jpg);
+        background-size: 700px 450px;  
+        height:350px;
+        width: 500px;
+
+        
+     }  
+     div{
+        color:rgb(26, 58, 85);
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        margin: 20px;
+        font-size: 30px;
+        float: left;
+                  text-align:center;
+
+        border-radius: 40px 0;
+        padding: 20px;
+        box-shadow: -2px 3px 25px 2px rgba(117, 235, 20, 1) , 2px 2px 26px 6px rgba(24, 20, 235, 1);
+                  /* left top blur expand */
+        background-repeat: no-repeat;
+        transition: 2s box-shadow , 1s border-radius, 1s transform , 2s text-align ;
+        
+     }
+     div:hover{
+          box-shadow: -2px 3px 25px 2px rgba(235, 185, 20, 1) , 2px 2px 26px 6px rgba(235, 20, 196, 1);
+          border-radius:50%;
+          transform: rotateZ(180deg);
+         
+
+    
+     }
+     body{
+        background-color: rgba(32, 27, 29, 1);
+     }
+
+
+    </style>
+</head>
+<body>
+    <div class="example1">card1</div>
+    <div class="example2">card2</div>
+    <div class="example3">card3</div>
+</body>
+</html>

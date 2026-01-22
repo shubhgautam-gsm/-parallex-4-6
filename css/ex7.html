@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: conic-gradient(red, yellow, pink, green);
+  animation: rotateColors 10s linear infinite; /* Define animation */
+}
+
+@keyframes rotateColors {
+  0% { background-position: 0 0; }
+  100% { background-position: 10% 10%; }
+}
+</style>
+</head>
+<body id="grad1">
+
+<h1>Radial Gradient - Color Rotation</h1>
+<p>This radial gradient transitions through colors in a loop:</p>
+
+<div></div>
+
+<script>
+// JavaScript for dynamically updating gradient colors
+document.addEventListener('DOMContentLoaded', function() {
+  const grad1 = document.getElementById('grad1');
+  const gradientColors = ['red', 'yellow', 'pink', 'green']; // Define gradient colors
+  let currentIndex = 0;
+
+  function updateGradientColor() {
+    currentIndex = (currentIndex + 1) % gradientColors.length;
+    const newGradient = gradientColors.slice(currentIndex).concat(gradientColors.slice(0, currentIndex)).join(',');
+    grad1.style.backgroundImage = `linear-gradient(${newGradient})`;
+  }
+
+  // Update gradient colors every 2 seconds
+  setInterval(updateGradientColor, 2);
+});
+</script>
+
+</body>
+</html>

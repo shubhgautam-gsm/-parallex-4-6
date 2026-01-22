@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hypnotic Rotating Sphere</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+        perspective: 800px;
+    }
+
+    #sphere-container {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        animation: rotate 10s linear infinite;
+        transform-style: preserve-3d;
+    }
+
+    #sphere {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        box-sizing: border-box;
+        padding: 20px;
+        animation: changeColor 5s linear infinite;
+        transform-origin: center;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotateY(0deg) rotateX(0deg);
+        }
+        100% {
+            transform: rotateY(360deg) rotateX(360deg);
+        }
+    }
+
+    @keyframes changeColor {
+        0% {
+            background-color: red;
+        }
+        25% {
+            background-color: yellow;
+        }
+        50% {
+            background-color: pink;
+        }
+        75% {
+            background-color: green;
+        }
+        100% {
+            background-color: red;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div id="sphere-container">
+    <div id="sphere"></div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const sphere = document.getElementById('sphere');
+
+    function changeColor() {
+        const colors = ['red', 'yellow', 'pink', 'green'];
+        let currentIndex = 0;
+
+        setInterval(() => {
+            sphere.style.backgroundColor = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length;
+        }, 1000);
+    }
+
+    changeColor();
+});
+</script>
+
+</body>
+</html>

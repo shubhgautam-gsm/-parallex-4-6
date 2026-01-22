@@ -1,0 +1,12 @@
+body {
+  background-color: lightblue;
+}
+
+/*  external css */
+h2 {
+  color:rgb(221, 7, 214);
+  /* color:red;
+  color:yellow; */
+  margin-left: 20px;
+}
+

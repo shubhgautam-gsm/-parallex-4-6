@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            position: relative;
+
+        }
+        .b1{
+            position: absolute;
+            z-index: 1;
+            border: 2px solid orangered;
+            height: 150px;
+            margin: 0 40px 0 40px;
+            background-color: rgba(221, 114, 75, 0.71);
+            width: 70%;
+        }
+        .b2{
+            position: absolute;
+            border: 2px solid rgba(20, 47, 91, 0.61);
+            top: -20px;
+            width: 30%;
+            height: 100px;
+            left: 50px;
+            z-index: 2;
+        }
+
+        .b3{
+            position: absolute;
+            width: 40%;
+            border: 2px solid rgb(102, 146, 115);
+            bottom:-10px;
+            height: 120px;
+            left: 140px;
+            z-index: 3;
+            background-color: rgba(92, 138, 90, 0.6);
+        }
+        p{
+            position: absolute;
+            z-index: 4;
+            margin-top: -30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index</h1>
+    <p> nostrum
+         quis impedit. Saepe deserunt voluptates minima a maiores expedita!</p><br><br>
+    <div class="main">
+        <div class="b1">BOX 1</div>
+        <div class="b2">BOX 2</div>
+        <div class="b3">BOX 3</div>
+    </div>
+</body>
+</html>

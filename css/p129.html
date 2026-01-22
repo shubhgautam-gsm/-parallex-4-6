@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* not working z-index on text     
+         p,h1{  
+            z-index: 1;
+        }
+    */
+        .img1{
+            position: absolute;
+            z-index: -3;
+        }
+        .img2{
+            position: absolute;
+            z-index: 2;
+            left:110px
+        }
+        .img3{
+            position: absolute;
+            z-index: 3;
+            left:200px;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>THIS IS HEADING</h1>
+    <img class="img1"  src="../html/imgs/cup.jpg" alt="">    
+    <img class="img2" src="../html/imgs/items.jpg" alt="">    
+    <img class="img3" src="../html/imgs/mobile.jpg" alt="">
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint neque doloribus nam illum earum quia suscipit est exercitationem nisi, adipisci 
+        facilis hic laborum corrupti autem sequi dolorem pariatur repellat corporis.</p>
+
+</body>
+</html>

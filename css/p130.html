@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initia++++l-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            position: relative;
+            border: 2px solid blue;
+            margin:0px 30px 0px 30px;
+            height: 120px;
+        }
+        .b-box{
+            position: absolute;
+            margin:30px;
+            height: 300px;
+            z-index: 2;
+        }
+        .g-box{
+            position: absolute;
+            background-color: green;
+            right: 80px;
+            top:80px;
+            height: 60px;
+            z-index: 1;
+        }
+        .gr-box{
+            top:-20px;
+            height: 80px;
+            position: absolute;
+            background-color: rgb(125, 122, 122);
+            left:130px;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index </h1>
+    <p>
+        An element with greater stack order is always above an element
+        with a lower stack order.
+    </p>
+    <div class="container">
+        <div class="b-box">Blue box (z-index: 2)</div>
+        <div class="gr-box">Gray box (z-index: -1)</div>
+        <div class="g-box">Green box (z-index: 1)</div>
+    </div>
+</body>
+</html>

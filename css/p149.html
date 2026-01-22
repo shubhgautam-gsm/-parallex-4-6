@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        animation-direction: alternate-reverse;  
+        animation-name: ball;
+        animation-duration: 2s;
+        position: relative;
+    }
+    @keyframes ball{
+       0%{
+        transform: rotate(0deg);
+        left: 50px;
+       }
+       25%{
+        left: 250px;
+        transform: rotate(90deg);
+       }
+       50%{
+       
+        left: 500px;
+        transform: rotate(180deg);
+       }
+       75%{
+     
+        left: 250px;
+        transform: rotate(270deg);
+       }
+       100%{
+     
+        left: 0;
+        transform: rotate(360deg);
+       }
+    }
+
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p>The animation-iteration-count property specifies the number of times an animation should run. The following example will run the animation 3 times before it stops:</p>
+
+<img src="./imgs/download (1).jpeg">
+
+</body>
+</html>
+
+

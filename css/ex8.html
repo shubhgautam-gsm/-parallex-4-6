@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+#sphere {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: red; /* Initial color */
+  animation: rotateColors 5s linear infinite;
+}
+
+@keyframes rotateColors {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: yellow;
+  }
+  50% {
+    background-color: pink;
+  }
+  75% {
+    background-color: green;
+  }
+  100% {
+    background-color: red;
+  }
+}
+</style>
+</head>
+<body>
+
+<div id="sphere"></div>
+
+<script>
+// JavaScript for dynamically updating sphere colors
+document.addEventListener('DOMContentLoaded', function() {
+  const sphere = document.getElementById('sphere');
+  const colors = ['red', 'yellow', 'pink', 'green']; // Define colors to rotate
+  let currentIndex = 0;
+
+  function rotateColor() {
+    currentIndex = (currentIndex + 1) % colors.length;
+    sphere.style.backgroundColor = colors[currentIndex];
+  }
+
+  // Update sphere color every 1 second
+  setInterval(rotateColor, 0.1);
+});
+</script>
+
+</body>
+</html>
