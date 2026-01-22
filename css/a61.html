@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+#myDiv {
+	
+transition:transform 2s;
+  transform:translate(100px) skew(20deg,10deg);
+}
+#myDiv:hover{
+  transform:translate(50px) skew(40deg,60deg);
+}
+</style>
+</head>
+<body>
+
+<h1>The skew() Method</h1>
+<p>The skew() method skews an element into a given angle.</p>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+This div element is skewed 20 degrees along the X-axis, and 10 degrees along the Y-axis.
+</div>
+
+</body>
+</html>
+
+
